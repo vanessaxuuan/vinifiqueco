@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinifique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">
+          <div><img src="./src/logo.png" /></div>
+        </a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#wines" class="nav__link">Wines</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="img-pc"><img src="./src/bannerpc.png" loading="lazy"></div>
+      <div class="img-m"><img src="./src/bannermb.png" loading="lazy"></div>
+    </section>
+
+    <section class="img-m">
+      <div class="slider">
+        <div class="slides-container">
+          <!-- Slides will be dynamically generated here -->
+        </div>
+        <div class="arrows-wrapper">
+          <button class="prev" onclick="prevSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+            <path d="M0.646442 3.64645C0.45118 3.84171 0.45118 4.15829 0.646442 4.35355L3.82842 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.7071 4L4.53553 1.17157C4.73079 0.976311 4.73079 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82842 0.464466L0.646442 3.64645ZM61 3.5L0.999996 3.5V4.5L61 4.5V3.5Z" fill="black"/>
+            </svg></button>
+          <button class="next" onclick="nextSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+            <path d="M0.646442 3.64645C0.45118 3.84171 0.45118 4.15829 0.646442 4.35355L3.82842 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.7071 4L4.53553 1.17157C4.73079 0.976311 4.73079 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82842 0.464466L0.646442 3.64645ZM61 3.5L0.999996 3.5V4.5L61 4.5V3.5Z" fill="black"/>
+            </svg></button>
+        </div>
+        
+      </div>
+
+    </section>
+
+    
+
+
+    <section class="img-m" id="wines">
+      <div class="filter-bar"><a href="#">Back To Top</a></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Swiper Slides -->
+        </div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    </div>
+    </section>
+
+    <section class="img-m" id="about">
+      <div><img src="./src/aboutmb4.png" loading="lazy"></div>
+    </section>
+
+    <section class="footer-section img-m" style="margin-top: -1px;">
+      <div style="position: relative;">
+        <img src="./src/footermb2.png" loading="lazy">
+        <div class="footer">
+          <div>
+            <h2>Contact Us</h2>
+            <p><a>info@vinifique.com</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  </main>
+
+  <script  type="module" src="/src/wineslides.js"></script>
+  <script type="module" src="/src/wineryslide.js"></script>
+</body>
+
+</html>

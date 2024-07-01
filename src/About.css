@@ -1,0 +1,88 @@
+.about-us {
+  position: relative;
+}
+
+.about-bg-mb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about-bg-pc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 8vw;
+  padding-top: 18vw;
+  padding-bottom: 12vw;
+  gap: 2vw;
+}
+
+.about-1 {
+  font-size: 8vw;
+  width: 100%;
+  text-align: start;
+}
+
+.about-2 {
+  font-size: 1.7em;
+  line-height: 125%;
+  width: 100%;
+  text-align: center;
+}
+
+.about-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.about-3 {
+  width: 40vw;
+}
+
+.about-4 {
+  font-size: 4vw;
+  width: 100%;
+  text-align: start;
+}
+
+.about-5 {
+  font-size: 4vw;
+  width: 100%;
+  text-align: end;
+}
+
+.about-5 {
+  font-size: 4vw;
+  width: 100%;
+  text-align: end;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-2 {
+    font-size: 4.7em;
+    line-height: 125%;
+    width: 100%;
+    text-align: center;
+  }
+  .about-3 {
+    width: 30vw;
+  }
+  .about-4 {
+    font-size: 3vw;
+}
+}
